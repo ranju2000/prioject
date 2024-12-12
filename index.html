@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find and Replace Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find and Replace Tool</h1>
+        <textarea id="inputText" placeholder="Type or paste your text here..."></textarea>
+
+        <div class="controls">
+            <label for="findText">Find:</label>
+            <input type="text" id="findText" placeholder="Enter word or phrase to find">
+
+            <label for="replaceText">Replace with:</label>
+            <input type="text" id="replaceText" placeholder="Enter word or phrase to replace with">
+
+            <button onclick="findAndReplace()">Replace</button>
+        </div>
+
+        <div class="output">
+            <h2>Updated Text:</h2>
+            <textarea id="outputText" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
